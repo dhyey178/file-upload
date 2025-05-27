@@ -109,8 +109,8 @@ This command will:
 These commands help you manage your database schema and data during development. Ensure your Docker Compose services are running before executing these.
 
 
-  * **Initialize Schema (First-time or After Reset or Schema Updates):**
-    To create your database tables for the very first time, after a reset, or to apply new schema changes defined in `prisma/schema.prisma` after modifying your models:
+  * **Initialize Schema (Schema Updates):**
+    To create your database tables to apply new schema changes defined in `prisma/schema.prisma` after modifying your models:
 
     ```bash
     docker compose run --rm app pnpm prisma migrate dev --name <migration_name>
